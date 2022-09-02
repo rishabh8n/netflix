@@ -3,4 +3,31 @@
   span {
     padding-left: 50px;
   }
+  .myslider {
+    padding: 10px 4%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 98%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    width: 40px;
+    color: white;
+    transition: all 0.15s ease-in-out;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+    border-radius: 0 0.3em 0.3em 0;
+  }
+  .swiper-button-next {
+    right: 0;
+    border-radius: 0.3em 0 0 0.3em;
+  }
 }

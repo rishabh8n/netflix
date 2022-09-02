@@ -11,6 +11,7 @@ function Home() {
       <Navbar />
       <Featured />
       <List />
+      <List />
     </div>
   );
 }
