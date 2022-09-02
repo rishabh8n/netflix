@@ -1,0 +1,66 @@
+.featured {
+  height: 90vh;
+  position: relative;
+
+  .featured-movie {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding-left: 50px;
+    flex-direction: column;
+    gap: 15px;
+    .featured-type {
+      display: flex;
+      align-items: center;
+      // gap: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      .netflix-logo {
+        width: 30px;
+      }
+    }
+    .movie-title {
+      z-index: 9;
+      left: 50px;
+      bottom: 0;
+      font-size: 80px;
+    }
+    .movie-options {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px 20px;
+        border-radius: 0.3em;
+        color: white;
+        background: rgba(255, 255, 255, 0.123);
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 1.02rem;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.323);
+        }
+      }
+    }
+    .description {
+      width: 55%;
+    }
+  }
+}
