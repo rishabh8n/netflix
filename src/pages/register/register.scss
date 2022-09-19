@@ -1,0 +1,89 @@
+.register {
+  min-height: 100vh;
+  background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0,
+      transparent 60%,
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 3.2em;
+
+    .logo {
+      height: 37px;
+    }
+    .signin {
+      padding: 0.25em 1.25em;
+      font-size: 1rem;
+      background-color: red;
+      color: white;
+      border-radius: 0.3em;
+    }
+  }
+  .main {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .center {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+      p {
+        text-align: center;
+        margin-top: 1.3em;
+      }
+      .mail {
+        display: flex;
+        height: 45px;
+        input {
+          flex-grow: 1;
+          flex-basis: 100%;
+          padding: 0.65em;
+          font-size: 1.01rem;
+          border: none;
+          border: 1px solid gray;
+          outline: none;
+          &:focus {
+            border: 1px solid rgb(11, 136, 253);
+          }
+        }
+        button {
+          height: 100%;
+          background-color: red;
+          white-space: nowrap;
+          gap: 5px;
+          padding: 0 1em;
+          font-size: 1.3rem;
+          color: white;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .ficon {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
