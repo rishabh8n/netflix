@@ -6,7 +6,7 @@ import Register from "./pages/register/register";
 import Video from "./pages/video/video";
 
 function App(props) {
-  return <Login />;
+  return <Home />;
 }
 
 export default App;
